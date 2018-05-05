@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <webgraphee>
+            <label>WebgrapheeL</label>
+            <sort_order>100</sort_order>
+        </webgraphee>
+    </tabs>
+    <sections>
+        <webgraphee_ogmeta translate="label">
+            <label>Open Graph Meta Data</label>
+            <tab>webgraphee</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+              <about>
+                    <frontend_model>webgraphee_ogmeta/adminhtml_about</frontend_model>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </about>
+
+                <og translate="label">
+                    <label>Configuration</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1</sort_order>
+                    <fields>
+                        <enabled translate="label" module="webgraphee_ogmeta">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+  		                  <image translate="label" module="webgraphee_ogmeta">
+                          <label>Default OG Meta Image</label>
+                          <frontend_type>text</frontend_type>
+                          <sort_order>20</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                      </image>
+                      <sitename translate="label" module="webgraphee_ogmeta">
+                          <label>Site Name</label>
+                          <frontend_type>text</frontend_type>
+                          <sort_order>20</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                      </sitename>
+                      <productdescription translate="label" module="webgraphee_ogmeta">
+                          <label>Use Item Short Description</label>
+                          <frontend_type>select</frontend_type>
+                          <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                          <sort_order>30</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+		                     <comment>If enabled the product short description will be used in place of the long description.</comment>
+                      </productdescription>
+                    </fields>
+                </og>
+            </groups>
+        </webgraphee_ogmeta>
+    </sections>
+</config>
